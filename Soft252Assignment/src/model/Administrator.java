@@ -10,11 +10,11 @@ package model;
  * @author mhill9
  */
 public class Administrator {
-private String AdminLetter = "A";
-private String AdminName;
-private String AdminSurname;
-private String AdminStreetNumber;
-private String AdminStreetName;
-private String AdminCityName   ;             
-private String AdminPostCode;
+private String Letter = "A";
+private String Name;
+private String Surname;
+private String StreetNumber;
+private String StreetName;
+private String CityName;             
+private String PostCode;
 }

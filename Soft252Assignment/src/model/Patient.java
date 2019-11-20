@@ -10,5 +10,11 @@ package model;
  * @author mhill9
  */
 public class Patient {
-      
+private String Letter = "P";
+private String Name;
+private String Surname;
+private String StreetNumber;
+private String StreetName;
+private String CityName;             
+private String PostCode;
 }
