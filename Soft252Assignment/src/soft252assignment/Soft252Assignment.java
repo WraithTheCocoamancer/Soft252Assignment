@@ -16,6 +16,8 @@ public class Soft252Assignment {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        HospitalGui LogIn = new HospitalGui();
+        LogIn.show();
     }
     
 }
