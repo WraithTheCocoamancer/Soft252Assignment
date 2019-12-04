@@ -9,6 +9,6 @@ package model;
  *
  * @author mhill9
  */
-public class ClinicStock {
+public class Feedback {
     
 }

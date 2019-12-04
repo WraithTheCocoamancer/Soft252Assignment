@@ -9,6 +9,6 @@ package model;
  *
  * @author mhill9
  */
-public class Ratings {
+public class AccountRequest {
     
 }

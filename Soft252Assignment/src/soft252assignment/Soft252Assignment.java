@@ -5,6 +5,9 @@
  */
 package soft252assignment;
 
+
+
+import Views.HospitalGui;
 /**
  *
  * @author mhill9
@@ -12,6 +15,7 @@ package soft252assignment;
 public class Soft252Assignment {
 
     /**
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
