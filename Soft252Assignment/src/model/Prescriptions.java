@@ -13,15 +13,15 @@ public class Prescriptions {
     public String DoctorId;
     public String paitentId;
     public String DoctorsNotes;
-    public String Medicine;
+    public Medicines medicine;
     public int Quantity;
     public String Doseage;
 
-    public Prescriptions(String DoctorId, String paitentId, String DoctorsNotes, String Medicine, int Quantity, String Doseage) {
+    public Prescriptions(String DoctorId, String paitentId, String DoctorsNotes, Medicines medicine, int Quantity, String Doseage) {
         this.DoctorId = DoctorId;
         this.paitentId = paitentId;
         this.DoctorsNotes = DoctorsNotes;
-        this.Medicine = Medicine;
+        this.medicine = medicine;
         this.Quantity = Quantity;
         this.Doseage = Doseage;
     }
@@ -50,12 +50,12 @@ public class Prescriptions {
         this.DoctorsNotes = DoctorsNotes;
     }
 
-    public String getMedicine() {
-        return Medicine;
+    public Medicines getMedicine() {
+        return medicine;
     }
 
-    public void setMedicine(String Medicine) {
-        this.Medicine = Medicine;
+    public void setMedicine(Medicines Medicine) {
+        this.medicine = medicine;
     }
 
     public int getQuantity() {
