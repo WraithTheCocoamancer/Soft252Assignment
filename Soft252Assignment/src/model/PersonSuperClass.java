@@ -10,16 +10,19 @@ package model;
  * @author mhill9
  */
 public class PersonSuperClass {
-private String Letter = "A";
+private String Letter;
 private String Name;
 private String Surname;
 private String Address;
+private int UserId;
 
 
-    public PersonSuperClass(String Name, String Surname, String StreetNumber, String StreetName, String CityName, String PostCode) {
+    public PersonSuperClass(String Name, String Surname,String Address, int UserID) {
+        
         this.Name = Name;
         this.Surname = Surname;
-
+        this.Address = Address;
+        this.UserId = UserId;
     }
 
     public String getLetter() {
@@ -33,6 +36,10 @@ private String Address;
     public String getSurname() {
         return Surname;
     }
+    
+    public int GetUserId() {
+        return UserId;
+    } 
     public void setLetter(String Letter) {
         this.Letter = Letter;
     }
@@ -43,5 +50,9 @@ private String Address;
 
     public void setSurname(String Surname) {
         this.Surname = Surname;
+    }
+    
+    public void setUserId (int UserId) {
+        this.UserId = UserId;
     }
 }

@@ -9,7 +9,11 @@ package model;
  *
  * @author mhill9
  */
-public class Administrator {
+public class Administrator extends PersonSuperClass{
 
-    
+    public Administrator(String Name, String Surname, String Address, int UserID) {
+        super(Name, Surname, Address, UserID);
+    }
+
+   
 }

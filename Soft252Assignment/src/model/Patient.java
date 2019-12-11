@@ -9,13 +9,15 @@ package model;
  *
  * @author mhill9
  */
-public class Patient {
+public class Patient extends PersonSuperClass{
 private Integer Age;
 private String Gender;
-    public Patient(Integer Age, String Gender) {
-        this.Age = Age;
-        this.Gender = Gender;
+
+    public Patient(String Name, String Surname, String Address, int UserID) {
+        super(Name, Surname, Address, UserID);
     }
+
+   
     public Integer getAge() {
         return Age;
     }
