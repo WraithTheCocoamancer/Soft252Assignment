@@ -9,10 +9,9 @@ package model;
  *
  * @author mhill9
  */
-public class AdminList {
-    private String AdminLetter = "A";
-    
-    public void adminlist(){
-    Administrator Admin1 = new Administrator (AdminLetter, "Reeanu", "Keeves", "The Trixmat", 1);    
+public class SecretaryList {
+    private String SecretaryLetter = "S";
+    public void doctorlist(){
+    Secretary Secretary1 = new Secretary (SecretaryLetter, "Gina", "Linetti", "99th precinct Brooklyn", 2);
 }
 }

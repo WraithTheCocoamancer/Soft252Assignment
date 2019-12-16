@@ -15,7 +15,7 @@ public class DoctorList {
     
     public void doctorlist(){
     Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "1234 Medical Lane", 2);
-    Doctor Doctor2 = new Doctor (DoctorLetter, "Markus", "Kelly", "22 Downhall Road", 3);
+    Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "22 Downhall Road", 3);
     Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "42 Wallaby Way", 4);
 
 
