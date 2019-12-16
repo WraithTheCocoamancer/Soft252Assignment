@@ -14,9 +14,9 @@ public class DoctorList {
     private String DoctorLetter = "D";
     
     public void doctorlist(){
-    Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "1234 Medical Lane", 2);
-    Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "22 Downhall Road", 3);
-    Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "42 Wallaby Way", 4);
+    Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2);
+    Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 3);
+    Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 4);
 
 
 }
