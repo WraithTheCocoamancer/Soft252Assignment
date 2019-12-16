@@ -11,8 +11,8 @@ package model;
  */
 public class Secretary extends PersonSuperClass{
 
-    public Secretary(String Letter,String Name, String Surname, String Address, int UserID) {
-        super( Letter,Name, Surname, Address, UserID);
+    public Secretary(String Letter,String Name, String Surname, String Address, int UserID, String PreferredPassword) {
+        super( Letter,Name, Surname, Address, UserID, PreferredPassword);
     }
 
 }

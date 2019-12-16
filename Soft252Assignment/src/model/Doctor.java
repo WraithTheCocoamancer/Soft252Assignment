@@ -11,8 +11,8 @@ package model;
  */
 public class Doctor extends PersonSuperClass{
 
-    public Doctor(String Letter,String Name, String Surname, String Address, int UserID) {
-        super(Letter, Name, Surname, Address, UserID);
+    public Doctor(String Letter,String Name, String Surname, String Address, int UserID, String PreferredPassword) {
+        super(Letter, Name, Surname, Address, UserID, PreferredPassword);
     }
 
    

@@ -15,7 +15,7 @@ private String Name;
 private String Surname;
 private String Address;
 private int UserId;
-private String PreferedPassword;
+private String PreferredPassword;
 
 
     public PersonSuperClass(String Letter, String Name, String Surname,String Address, int UserID, String PreferedPassword) {
@@ -24,7 +24,7 @@ private String PreferedPassword;
         this.Surname = Surname;
         this.Address = Address;
         this.UserId = UserId;
-        this.PreferedPassword = PreferedPassword;
+        this.PreferredPassword = PreferredPassword;
     }
 
     public String getLetter() {
@@ -48,7 +48,7 @@ private String PreferedPassword;
     }
 
     public String getPreferedPassword() {
-        return PreferedPassword;
+        return PreferredPassword;
     }
 
     public void setSurname(String Surname) {
@@ -71,8 +71,8 @@ private String PreferedPassword;
         this.UserId = UserId;
     }
 
-    public void setPreferedPassword(String PreferedPassword) {
-        this.PreferedPassword = PreferedPassword;
+    public void setPreferedPassword(String PreferredPassword) {
+        this.PreferredPassword = PreferredPassword;
     }
 
     
