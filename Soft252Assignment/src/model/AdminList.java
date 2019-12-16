@@ -14,5 +14,6 @@ public class AdminList {
     
     public void adminlist(){
     Administrator Admin1 = new Administrator (AdminLetter, "Reeanu", "Keeves", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 1);    
+    //this is a test for save delete this when you find it
 }
 }
