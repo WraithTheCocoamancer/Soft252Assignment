@@ -9,10 +9,6 @@ package model;
  *
  * @author mhill9
  */
-public class Secretary extends PersonSuperClass{
-
-    public Secretary(String Letter,String Name, String Surname, String Address, int UserID) {
-        super( Letter,Name, Surname, Address, UserID);
-    }
-
+public class AdminList {
+    
 }

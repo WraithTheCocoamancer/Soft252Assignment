@@ -13,8 +13,8 @@ public class Patient extends PersonSuperClass{
 private Integer Age;
 private String Gender;
 
-    public Patient(String Name, String Surname, String Address, int UserID) {
-        super(Name, Surname, Address, UserID);
+    public Patient(String Letter,String Name, String Surname, String Address, int UserID) {
+        super(Letter, Name, Surname, Address, UserID);
     }
 
    

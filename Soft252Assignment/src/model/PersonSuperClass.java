@@ -17,8 +17,8 @@ private String Address;
 private int UserId;
 
 
-    public PersonSuperClass(String Name, String Surname,String Address, int UserID) {
-        
+    public PersonSuperClass(String Letter, String Name, String Surname,String Address, int UserID) {
+        this.Letter = Letter;
         this.Name = Name;
         this.Surname = Surname;
         this.Address = Address;
@@ -29,30 +29,41 @@ private int UserId;
         return Letter;
     }
 
-    public String getName() {
-        return Name;
-    }
-
-    public String getSurname() {
-        return Surname;
-    }
-    
-    public int GetUserId() {
-        return UserId;
-    } 
     public void setLetter(String Letter) {
         this.Letter = Letter;
+    }
+
+    public String getName() {
+        return Name;
     }
 
     public void setName(String Name) {
         this.Name = Name;
     }
 
+    public String getSurname() {
+        return Surname;
+    }
+
     public void setSurname(String Surname) {
         this.Surname = Surname;
     }
-    
-    public void setUserId (int UserId) {
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
+    }
+
+    public int getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(int UserId) {
         this.UserId = UserId;
     }
+
+    
 }
