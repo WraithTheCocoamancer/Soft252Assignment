@@ -9,6 +9,10 @@ package Views;
  *
  * @author mhill9
  */
+import model.AdminList;
+import model.DoctorList;
+import model.PatientList;
+import model.SecretaryList;
 public class HospitalGui extends javax.swing.JFrame {
 
     /**
@@ -27,38 +31,42 @@ public class HospitalGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        UserComboBox = new javax.swing.JComboBox<>();
+        LogIn = new javax.swing.JButton();
+        PasswordField = new javax.swing.JTextField();
+        IDField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        LogInFailText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrator", "Dector", "Secretary", "Patient" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        UserComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrator", "Doctor", "Secretary", "Patient" }));
+        UserComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                UserComboBoxActionPerformed(evt);
             }
         });
 
-        jButton1.setText("Log In");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        LogIn.setText("Log In");
+        LogIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogInActionPerformed(evt);
             }
         });
 
-        jTextField1.setText("Password");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        PasswordField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                PasswordFieldActionPerformed(evt);
             }
         });
 
-        jTextField2.setText("ID number");
-        jTextField2.setActionCommand("<Not Set>");
+        IDField.setActionCommand("<Not Set>");
+        IDField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IDFieldActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("ID number");
 
@@ -74,51 +82,94 @@ public class HospitalGui extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
+                        .addComponent(IDField, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(UserComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(121, 121, 121)
+                .addComponent(LogInFailText, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(UserComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IDField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addGap(32, 32, 32)
+                .addComponent(LogInFailText, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addComponent(LogIn)
                 .addGap(69, 69, 69))
         );
 
-        jButton1.getAccessibleContext().setAccessibleName("LogInBtn");
+        LogIn.getAccessibleContext().setAccessibleName("LogInBtn");
         jLabel1.getAccessibleContext().setAccessibleName("Label ID");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void UserComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UserComboBoxActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+        
+    }//GEN-LAST:event_UserComboBoxActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_PasswordFieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        UserComboBox.getSelectedIndex();
+        PasswordField.getText();
+        IDField.getText();
+        DoctorList DoctorS = new DoctorList(); 
+        String DoctorPasswords = DoctorS.Doctor1.getPreferedPassword();
+        String DoctorID = String.valueOf(DoctorS.Doctor1.getUserId());
+        if (PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Administrator")) 
+        {
+            
+            this.setVisible(false);
+        new MainPageGuiAdmin().setVisible(true);
+        }
+        else if(PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Doctor"))
+        {
+             this.setVisible(false);
+        new MainPageGuiDoctor().setVisible(true);
+        }
+        else if(PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Patient"))
+        {
+             this.setVisible(false);
+        new MainPageGuiPatient().setVisible(true);
+        }
+        else if (PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Secretary"))
+        {
+             this.setVisible(false);
+        new MainPageGuiSecretary().setVisible(true);
+        }
+        else 
+        {
+        LogInFailText.setText("log in Failed. Please try again!");
+        }
+               
+    }//GEN-LAST:event_LogInActionPerformed
+
+    private void IDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_IDFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,11 +207,12 @@ public class HospitalGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JTextField IDField;
+    private javax.swing.JButton LogIn;
+    private javax.swing.JLabel LogInFailText;
+    private javax.swing.JTextField PasswordField;
+    private javax.swing.JComboBox<String> UserComboBox;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

@@ -12,12 +12,10 @@ package model;
 
 public class DoctorList {
     private String DoctorLetter = "D";
-    
+    public Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2, "Bro");
+    public Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 3, "WhoWatches");
+    public Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 4, "Crikey!");
     public void doctorlist(){
-    Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2, "Bro");
-    Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 3, "WhoWatches");
-    Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 4, "Crikey!");
-
 
 }
 }

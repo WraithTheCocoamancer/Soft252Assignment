@@ -23,8 +23,8 @@ private String PreferredPassword;
         this.Name = Name;
         this.Surname = Surname;
         this.Address = Address;
-        this.UserId = UserId;
-        this.PreferredPassword = PreferredPassword;
+        this.UserId = UserID;
+        this.PreferredPassword = PreferedPassword;
     }
 
     public String getLetter() {
