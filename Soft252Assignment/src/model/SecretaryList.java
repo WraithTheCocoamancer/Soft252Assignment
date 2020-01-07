@@ -12,6 +12,6 @@ package model;
 public class SecretaryList {
     private String SecretaryLetter = "S";
     public void doctorlist(){
-    Secretary Secretary1 = new Secretary (SecretaryLetter, "Gina", "Linetti", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2);
+    Secretary Secretary1 = new Secretary (SecretaryLetter, "Gina", "Linetti", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2,"YasQueen");
 }
 }

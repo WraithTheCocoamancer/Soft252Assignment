@@ -13,8 +13,8 @@ public class PatientList {
     private String PatientLetter = "P";
     
     public void Patientlist(){
-    Patient Patient1 = new Patient (PatientLetter, "Jeffery", "Brown", "12 Hollow Point Street", 5);
-    Patient Patient2 = new Patient (PatientLetter, "John", "Doe", "123 Plain Street", 6);
-    Patient Patient3 = new Patient (PatientLetter, "Jeramiah", "Quinten", "4 Waterway", 7);
+    Patient Patient1 = new Patient (PatientLetter, "Jeffery", "Brown", "12 Hollow Point Street", 5,"Brown123");
+    Patient Patient2 = new Patient (PatientLetter, "John", "Doe", "123 Plain Street", 6,"Snow");
+    Patient Patient3 = new Patient (PatientLetter, "Jeramiah", "Quinten", "4 Waterway", 7,"Splendid?");
 }
 }
