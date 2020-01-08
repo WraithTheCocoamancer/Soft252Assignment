@@ -1,0 +1,5 @@
+All lists
+find ways to get the data into whatever my gui forms are display meds and appointments
+singleton method
+reading in Json
+get as much functionallity

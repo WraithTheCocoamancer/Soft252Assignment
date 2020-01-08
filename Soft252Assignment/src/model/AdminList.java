@@ -4,16 +4,19 @@
  * and open the template in the editor.
  */
 package model;
-
+import java.util.ArrayList;
 /**
  *
  * @author mhill9
  */
 public class AdminList {
     private String AdminLetter = "A";
+    Administrator Admin1 = new Administrator (AdminLetter, "Reeanu", "Keeves", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 1, "mydog");   
+   public ArrayList<Administrator> AdminList = new ArrayList<>(); 
     
-    public void adminlist(){
-    Administrator Admin1 = new Administrator (AdminLetter, "Reeanu", "Keeves", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 1, "mydog");    
+    public AdminList()
+    {
+      AdminList.add(Admin1);
     //this is a test for save delete this when you find it
-}
+    }
 }
