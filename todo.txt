@@ -3,3 +3,4 @@ find ways to get the data into whatever my gui forms are display meds and appoin
 singleton method
 reading in Json
 get as much functionallity
+string arrays = 42
