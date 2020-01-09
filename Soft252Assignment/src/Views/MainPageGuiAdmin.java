@@ -32,6 +32,7 @@ public class MainPageGuiAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        LogOffAdmin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -44,6 +45,13 @@ public class MainPageGuiAdmin extends javax.swing.JFrame {
         jLabel3.setText("View ratings of  Doctors");
 
         jLabel4.setText("Provide Feedback to doctors");
+
+        LogOffAdmin.setText("Log Off");
+        LogOffAdmin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOffAdminActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,7 +73,10 @@ public class MainPageGuiAdmin extends javax.swing.JFrame {
                         .addComponent(jLabel3))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel4)))
+                        .addComponent(jLabel4))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(LogOffAdmin)))
                 .addContainerGap(92, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -81,11 +92,19 @@ public class MainPageGuiAdmin extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(LogOffAdmin)
+                .addContainerGap(81, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void LogOffAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOffAdminActionPerformed
+        // TODO add your handling code here:
+                this.setVisible(false);
+        new HospitalGui().setVisible(true);
+    }//GEN-LAST:event_LogOffAdminActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,6 +144,7 @@ public class MainPageGuiAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Header;
+    private javax.swing.JButton LogOffAdmin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
