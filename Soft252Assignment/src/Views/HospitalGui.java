@@ -90,14 +90,11 @@ public class HospitalGui extends javax.swing.JFrame {
                         .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LogInFailText, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(LogIn, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(UserComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(121, 121, 121)
-                .addComponent(LogInFailText, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,38 +129,72 @@ public class HospitalGui extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_PasswordFieldActionPerformed
 
+    AdminList Admins = new AdminList();
+    DoctorList Doctors = new DoctorList();
+    PatientList Patients = new PatientList();
+    SecretaryList Secretarys = new SecretaryList();
     private void LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInActionPerformed
         // TODO add your handling code here:
         UserComboBox.getSelectedIndex();
         PasswordField.getText();
         IDField.getText();
-        DoctorList DoctorS = new DoctorList(); 
-        String DoctorPasswords = DoctorS.Doctor1.getPreferedPassword();
-        String DoctorID = String.valueOf(DoctorS.Doctor1.getUserId());
-        if (PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Administrator")) 
-        {
+        String Letter = "A";
+        int n = 0;
+        if (UserComboBox.getSelectedItem().equals("Administrator")) {
+            Letter = "A";
+            n = Admins.AdminList.size() - 1;
+        }
+        else if (UserComboBox.getSelectedItem().equals("Doctor")){
+            Letter = "D";
+            n = Doctors.DoctorList.size() - 1;
+        }
+         else if (UserComboBox.getSelectedItem().equals("Patient")){
+            Letter = "P";
+            n = Patients.PatientList.size() - 1;
+        }
+         else if (UserComboBox.getSelectedItem().equals("Secretary")){
+            Letter = "S";
+            n = Secretarys.SecretaryList.size() - 1;
+        }
+
+        for (int i = 0; i < n; i++) {
             
+        if (PasswordField.getText().equals(Admins.AdminList.get(i).getPreferedPassword()) && IDField.getText().equals(Admins.AdminList.get(i).getUserId()) && Letter == "A") 
+        {
+            System.out.println(Admins.AdminList.get(i).getUserId());
+            System.out.println(Admins.AdminList.get(i).getPreferedPassword());
+            System.out.println(Admins.AdminList.get(i).getLetter());
             this.setVisible(false);
         new MainPageGuiAdmin().setVisible(true);
         }
-        else if(PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Doctor"))
+        else if(PasswordField.getText().equals(Doctors.DoctorList.get(i).getPreferedPassword()) && IDField.getText().equals(Doctors.DoctorList.get(i).getUserId()) && Letter == "D")
         {
+            System.out.println(Doctors.DoctorList.get(i).getUserId());
+            System.out.println(Doctors.DoctorList.get(i).getPreferedPassword());
+            System.out.println(Doctors.DoctorList.get(i).getLetter());
              this.setVisible(false);
         new MainPageGuiDoctor().setVisible(true);
         }
-        else if(PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Patient"))
+        else if(PasswordField.getText().equals(Patients.PatientList.get(i).getPreferedPassword()) && IDField.getText().equals(Patients.PatientList.get(i).getUserId())  && Letter == "P")
         {
+            System.out.println(Patients.PatientList.get(i).getUserId());
+            System.out.println(Patients.PatientList.get(i).getPreferedPassword());
+            System.out.println(Patients.PatientList.get(i).getLetter());
              this.setVisible(false);
         new MainPageGuiPatient().setVisible(true);
         }
-        else if (PasswordField.getText().equals(DoctorPasswords) && IDField.getText().equals(DoctorID) && UserComboBox.getSelectedItem().equals("Secretary"))
+        else if (PasswordField.getText().equals(Secretarys.SecretaryList.get(i).getPreferedPassword()) && IDField.getText().equals(Secretarys.SecretaryList.get(i).getUserId()) && Letter == "S")
         {
+            System.out.println(Secretarys.SecretaryList.get(i).getUserId());
+            System.out.println(Secretarys.SecretaryList.get(i).getPreferedPassword());
+            System.out.println(Secretarys.SecretaryList.get(i).getLetter());
              this.setVisible(false);
         new MainPageGuiSecretary().setVisible(true);
         }
         else 
         {
         LogInFailText.setText("log in Failed. Please try again!");
+        }
         }
                
     }//GEN-LAST:event_LogInActionPerformed
