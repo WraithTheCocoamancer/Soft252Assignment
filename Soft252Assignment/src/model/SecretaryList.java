@@ -15,7 +15,7 @@ public class SecretaryList {
     private String SecretaryLetter = "S";
     Secretary Secretary1 = new Secretary (SecretaryLetter, "Gina", "Linetti", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2,"YasQueen");
     public ArrayList<Secretary> SecretaryList = new ArrayList<>();
-    public void doctorlist()
+    public void secretarylist()
     {
         SecretaryList.add(Secretary1);
     

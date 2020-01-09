@@ -14,7 +14,7 @@ public class AdminList {
     Administrator Admin1 = new Administrator (AdminLetter, "Reeanu", "Keeves", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 1, "mydog");   
    public ArrayList<Administrator> AdminList = new ArrayList<>(); 
     
-    public AdminList()
+    public void adminList()
     {
       AdminList.add(Admin1);
     //this is a test for save delete this when you find it

@@ -17,7 +17,7 @@ public class PatientList {
     Patient Patient2 = new Patient (PatientLetter, "John", "Doe", "123 Plain Street", 6,"Snow");
     Patient Patient3 = new Patient (PatientLetter, "Jeramiah", "Quinten", "4 Waterway", 7,"Splendid?");
     public ArrayList<Patient> PatientList = new ArrayList<>();
-    public void Patientlist()
+    public void patientlist()
     {
     PatientList.add(Patient1);
     PatientList.add(Patient2);

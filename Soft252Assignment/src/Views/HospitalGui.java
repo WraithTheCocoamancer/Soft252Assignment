@@ -21,6 +21,7 @@ public class HospitalGui extends javax.swing.JFrame {
      */
     public HospitalGui() {
         initComponents();
+        getData();
     }
 
     /**
@@ -133,6 +134,15 @@ public class HospitalGui extends javax.swing.JFrame {
     DoctorList Doctors = new DoctorList();
     PatientList Patients = new PatientList();
     SecretaryList Secretarys = new SecretaryList();
+    
+    private void getData(){
+        Doctors.doctorlist();
+        Admins.adminList();
+        Patients.patientlist();
+        Secretarys.secretarylist();
+    }
+    
+    
     private void LogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInActionPerformed
         // TODO add your handling code here:
         UserComboBox.getSelectedIndex();
@@ -141,25 +151,27 @@ public class HospitalGui extends javax.swing.JFrame {
         String Letter = "A";
         int n = 0;
         if (UserComboBox.getSelectedItem().equals("Administrator")) {
-            Letter = "A";
-            n = Admins.AdminList.size() - 1;
+            Letter = "A"; //converting easy to understand dropdown to tags used to identify role
+            n = Admins.AdminList.size()  ; // the -1 is to make it match the for loop
         }
         else if (UserComboBox.getSelectedItem().equals("Doctor")){
             Letter = "D";
-            n = Doctors.DoctorList.size() - 1;
+            n = Doctors.DoctorList.size() ;
+            System.out.println(Doctors.DoctorList.size());
         }
          else if (UserComboBox.getSelectedItem().equals("Patient")){
             Letter = "P";
-            n = Patients.PatientList.size() - 1;
+            n = Patients.PatientList.size() ;
         }
          else if (UserComboBox.getSelectedItem().equals("Secretary")){
             Letter = "S";
-            n = Secretarys.SecretaryList.size() - 1;
+            n = Secretarys.SecretaryList.size() ;
         }
+        System.out.println(n);
 
         for (int i = 0; i < n; i++) {
             
-        if (PasswordField.getText().equals(Admins.AdminList.get(i).getPreferedPassword()) && IDField.getText().equals(Admins.AdminList.get(i).getUserId()) && Letter == "A") 
+        if (PasswordField.getText().equals(Admins.AdminList.get(i).getPreferedPassword()) && IDField.getText().equals(String.valueOf(Admins.AdminList.get(i).getUserId())) && Letter.equals("A")) 
         {
             System.out.println(Admins.AdminList.get(i).getUserId());
             System.out.println(Admins.AdminList.get(i).getPreferedPassword());
@@ -167,7 +179,7 @@ public class HospitalGui extends javax.swing.JFrame {
             this.setVisible(false);
         new MainPageGuiAdmin().setVisible(true);
         }
-        else if(PasswordField.getText().equals(Doctors.DoctorList.get(i).getPreferedPassword()) && IDField.getText().equals(Doctors.DoctorList.get(i).getUserId()) && Letter == "D")
+        else if(PasswordField.getText().equals(Doctors.DoctorList.get(i).getPreferedPassword()) && IDField.getText().equals(String.valueOf(Doctors.DoctorList.get(i).getUserId())) && Letter.equals("D"))
         {
             System.out.println(Doctors.DoctorList.get(i).getUserId());
             System.out.println(Doctors.DoctorList.get(i).getPreferedPassword());
@@ -175,7 +187,7 @@ public class HospitalGui extends javax.swing.JFrame {
              this.setVisible(false);
         new MainPageGuiDoctor().setVisible(true);
         }
-        else if(PasswordField.getText().equals(Patients.PatientList.get(i).getPreferedPassword()) && IDField.getText().equals(Patients.PatientList.get(i).getUserId())  && Letter == "P")
+        else if(PasswordField.getText().equals(Patients.PatientList.get(i).getPreferedPassword()) && IDField.getText().equals(String.valueOf(Patients.PatientList.get(i).getUserId()))  && Letter.equals("P"))
         {
             System.out.println(Patients.PatientList.get(i).getUserId());
             System.out.println(Patients.PatientList.get(i).getPreferedPassword());
@@ -183,7 +195,7 @@ public class HospitalGui extends javax.swing.JFrame {
              this.setVisible(false);
         new MainPageGuiPatient().setVisible(true);
         }
-        else if (PasswordField.getText().equals(Secretarys.SecretaryList.get(i).getPreferedPassword()) && IDField.getText().equals(Secretarys.SecretaryList.get(i).getUserId()) && Letter == "S")
+        else if (PasswordField.getText().equals(Secretarys.SecretaryList.get(i).getPreferedPassword()) && IDField.getText().equals(String.valueOf(Secretarys.SecretaryList.get(i).getUserId())) && Letter.equals("S"))
         {
             System.out.println(Secretarys.SecretaryList.get(i).getUserId());
             System.out.println(Secretarys.SecretaryList.get(i).getPreferedPassword());
