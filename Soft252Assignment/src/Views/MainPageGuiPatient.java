@@ -9,6 +9,10 @@ package Views;
  *
  * @author mhill9
  */
+import model.AdminList;
+import model.DoctorList;
+import model.PatientList;
+import model.SecretaryList;
 public class MainPageGuiPatient extends javax.swing.JFrame {
 
     /**

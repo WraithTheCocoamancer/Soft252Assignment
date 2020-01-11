@@ -8,7 +8,10 @@ package Views;
 /**
  *
  * @author mhill9
- */
+ */import model.AdminList;
+import model.DoctorList;
+import model.PatientList;
+import model.SecretaryList;
 public class MainPageGuiAdmin extends javax.swing.JFrame {
 
     /**
