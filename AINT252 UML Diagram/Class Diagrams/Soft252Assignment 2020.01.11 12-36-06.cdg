@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Soft252Assignment">
+  <ClassDiagramComponents>
+    <Class name="AccountRequest" package="model" visibility="public" xPosition="52.0" yPosition="122.0">
+      <Fields>
+        <Field name="PotentialPatientName" type="String" visibility="public"/>
+        <Field name="PotentialPatientAddess" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="PotentialPatientName"/>
+          <Argument type="String" name="PotentialPatientAddess"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPotentialPatientName" returnType="String" visibility="public"/>
+        <Method name="setPotentialPatientName" returnType="void" visibility="public">
+          <Argument type="String" name="PotentialPatientName"/>
+        </Method>
+        <Method name="getPotentialPatientAddess" returnType="String" visibility="public"/>
+        <Method name="setPotentialPatientAddess" returnType="void" visibility="public">
+          <Argument type="String" name="PotentialPatientAddess"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Accounts" package="model" visibility="public" xPosition="246.0" yPosition="360.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Administrator" package="model" visibility="public" xPosition="933.0" yPosition="417.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Letter"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Surname"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="int" name="UserID"/>
+          <Argument type="String" name="PreferredPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="AdminList" package="model" visibility="public" xPosition="961.0" yPosition="572.0">
+      <Fields>
+        <Field name="AdminLetter" type="String" visibility="private"/>
+        <Field name="Admin1" type="Administrator" visibility="package"/>
+        <Field name="AdminList" type="ArrayList&lt;Administrator&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="adminList" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Appointments" package="model" visibility="public" xPosition="335.0" yPosition="515.0">
+      <Fields>
+        <Field name="DoctorId" type="String" visibility="public"/>
+        <Field name="PaitentId" type="String" visibility="public"/>
+        <Field name="PossibleDates" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="DoctorId"/>
+          <Argument type="String" name="PaitentId"/>
+          <Argument type="String" name="PossibleDates"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDoctorId" returnType="String" visibility="public"/>
+        <Method name="setDoctorId" returnType="void" visibility="public">
+          <Argument type="String" name="DoctorId"/>
+        </Method>
+        <Method name="getPaitentId" returnType="String" visibility="public"/>
+        <Method name="setPaitentId" returnType="void" visibility="public">
+          <Argument type="String" name="PaitentId"/>
+        </Method>
+        <Method name="getPossibleDates" returnType="String" visibility="public"/>
+        <Method name="setPossibleDates" returnType="void" visibility="public">
+          <Argument type="String" name="PossibleDates"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Doctor" package="model" visibility="public" xPosition="165.0" yPosition="1558.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Letter"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Surname"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="int" name="UserID"/>
+          <Argument type="String" name="PreferredPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="DoctorList" package="model" visibility="public" xPosition="724.0" yPosition="1110.0">
+      <Fields>
+        <Field name="DoctorLetter" type="String" visibility="private"/>
+        <Field name="Doctor1" type="Doctor" visibility="public"/>
+        <Field name="Doctor2" type="Doctor" visibility="public"/>
+        <Field name="Doctor3" type="Doctor" visibility="public"/>
+        <Field name="DoctorList" type="ArrayList&lt;Doctor&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="doctorlist" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Feedback" package="model" visibility="public" xPosition="552.0" yPosition="220.0">
+      <Fields>
+        <Field name="DoctorId" type="int" visibility="public"/>
+        <Field name="Rating" type="int" visibility="public"/>
+        <Field name="FeedbackNotes" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="DoctorId"/>
+          <Argument type="int" name="Rating"/>
+          <Argument type="String" name="FeedbackNotes"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDoctorId" returnType="int" visibility="public"/>
+        <Method name="setDoctorId" returnType="void" visibility="public">
+          <Argument type="int" name="DoctorId"/>
+        </Method>
+        <Method name="getRating" returnType="int" visibility="public"/>
+        <Method name="setRating" returnType="void" visibility="public">
+          <Argument type="int" name="Rating"/>
+        </Method>
+        <Method name="getFeedbackNotes" returnType="String" visibility="public"/>
+        <Method name="setFeedbackNotes" returnType="void" visibility="public">
+          <Argument type="String" name="FeedbackNotes"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Medicines" package="model" visibility="public" xPosition="29.0" yPosition="1353.0">
+      <Fields>
+        <Field name="Medicine" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Medicine"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMedicine" returnType="String" visibility="public"/>
+        <Method name="setMedicine" returnType="void" visibility="public">
+          <Argument type="String" name="Medicine"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MedicineStock" package="model" visibility="public" xPosition="58.0" yPosition="350.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="MedicineList" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Patient" package="model" visibility="public" xPosition="875.0" yPosition="1535.0">
+      <Fields>
+        <Field name="Age" type="Integer" visibility="private"/>
+        <Field name="Gender" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Letter"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Surname"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="int" name="UserID"/>
+          <Argument type="String" name="PreferredPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAge" returnType="Integer" visibility="public"/>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="Integer" name="Age"/>
+        </Method>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="Gender"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PatientList" package="model" visibility="public" xPosition="1225.0" yPosition="1307.0">
+      <Fields>
+        <Field name="PatientLetter" type="String" visibility="private"/>
+        <Field name="Patient1" type="Patient" visibility="package"/>
+        <Field name="Patient2" type="Patient" visibility="package"/>
+        <Field name="Patient3" type="Patient" visibility="package"/>
+        <Field name="PatientList" type="ArrayList&lt;Patient&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="patientlist" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PersonSuperClass" package="model" visibility="public" xPosition="1740.0" yPosition="786.0">
+      <Fields>
+        <Field name="Letter" type="String" visibility="private"/>
+        <Field name="Name" type="String" visibility="private"/>
+        <Field name="Surname" type="String" visibility="private"/>
+        <Field name="Address" type="String" visibility="private"/>
+        <Field name="UserId" type="int" visibility="private"/>
+        <Field name="PreferredPassword" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Letter"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Surname"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="int" name="UserID"/>
+          <Argument type="String" name="PreferedPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getLetter" returnType="String" visibility="public"/>
+        <Method name="setLetter" returnType="void" visibility="public">
+          <Argument type="String" name="Letter"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="Name"/>
+        </Method>
+        <Method name="getSurname" returnType="String" visibility="public"/>
+        <Method name="getPreferedPassword" returnType="String" visibility="public"/>
+        <Method name="setSurname" returnType="void" visibility="public">
+          <Argument type="String" name="Surname"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="Address"/>
+        </Method>
+        <Method name="getUserId" returnType="int" visibility="public"/>
+        <Method name="setUserId" returnType="void" visibility="public">
+          <Argument type="int" name="UserId"/>
+        </Method>
+        <Method name="setPreferedPassword" returnType="void" visibility="public">
+          <Argument type="String" name="PreferredPassword"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Prescriptions" package="model" visibility="public" xPosition="16.0" yPosition="838.0">
+      <Fields>
+        <Field name="DoctorId" type="String" visibility="public"/>
+        <Field name="paitentId" type="String" visibility="public"/>
+        <Field name="DoctorsNotes" type="String" visibility="public"/>
+        <Field name="medicine" type="Medicines" visibility="public"/>
+        <Field name="Quantity" type="int" visibility="public"/>
+        <Field name="Doseage" type="String" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="DoctorId"/>
+          <Argument type="String" name="paitentId"/>
+          <Argument type="String" name="DoctorsNotes"/>
+          <Argument type="Medicines" name="medicine"/>
+          <Argument type="int" name="Quantity"/>
+          <Argument type="String" name="Doseage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDoctorId" returnType="String" visibility="public"/>
+        <Method name="setDoctorId" returnType="void" visibility="public">
+          <Argument type="String" name="DoctorId"/>
+        </Method>
+        <Method name="getPaitentId" returnType="String" visibility="public"/>
+        <Method name="setPaitentId" returnType="void" visibility="public">
+          <Argument type="String" name="paitentId"/>
+        </Method>
+        <Method name="getDoctorsNotes" returnType="String" visibility="public"/>
+        <Method name="setDoctorsNotes" returnType="void" visibility="public">
+          <Argument type="String" name="DoctorsNotes"/>
+        </Method>
+        <Method name="getMedicine" returnType="Medicines" visibility="public"/>
+        <Method name="setMedicine" returnType="void" visibility="public">
+          <Argument type="Medicines" name="Medicine"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="Quantity"/>
+        </Method>
+        <Method name="getDoseage" returnType="String" visibility="public"/>
+        <Method name="setDoseage" returnType="void" visibility="public">
+          <Argument type="String" name="Doseage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ReadAndWriteData" package="model" visibility="public" xPosition="58.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Secretary" package="model" visibility="public" xPosition="1765.0" yPosition="360.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Letter"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Surname"/>
+          <Argument type="String" name="Address"/>
+          <Argument type="int" name="UserID"/>
+          <Argument type="String" name="PreferredPassword"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="SecretaryList" package="model" visibility="public" xPosition="1612.0" yPosition="555.0">
+      <Fields>
+        <Field name="SecretaryLetter" type="String" visibility="private"/>
+        <Field name="Secretary1" type="Secretary" visibility="package"/>
+        <Field name="SecretaryList" type="ArrayList&lt;Secretary&gt;" visibility="public"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="secretarylist" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Singleton" package="model" visibility="public" xPosition="68.0" yPosition="593.0">
+      <Fields>
+        <Field name="instance" type="Singleton" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Singleton" returnType="void" visibility="private"/>
+        <Method name="getInstance" returnType="Singleton" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Soft252Assignment" package="soft252assignment" visibility="public" xPosition="58.0" yPosition="470.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HospitalGui" package="Views" visibility="public" xPosition="986.0" yPosition="786.0">
+      <Fields>
+        <Field name="Admins" type="AdminList" visibility="package"/>
+        <Field name="Doctors" type="DoctorList" visibility="package"/>
+        <Field name="Patients" type="PatientList" visibility="package"/>
+        <Field name="Secretarys" type="SecretaryList" visibility="package"/>
+        <Field name="IDField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="LogIn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="LogInFailText" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="PasswordField" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="UserComboBox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="UserComboBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="PasswordFieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="getData" returnType="void" visibility="private"/>
+        <Method name="LogInActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="IDFieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainPageGuiAdmin" package="Views" visibility="public" xPosition="2508.0" yPosition="757.0">
+      <Fields>
+        <Field name="Header" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="LogOffAdmin" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="LogOffAdminActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainPageGuiDoctor" package="Views" visibility="public" xPosition="2508.0" yPosition="75.0">
+      <Fields>
+        <Field name="LogOffDoctor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="LogOffDoctorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainPageGuiPatient" package="Views" visibility="public" xPosition="2508.0" yPosition="1070.0">
+      <Fields>
+        <Field name="LogOffPatient" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="LogOffPatientActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainPageGuiSecretary" package="Views" visibility="public" xPosition="2508.0" yPosition="401.0">
+      <Fields>
+        <Field name="LogOffSecretary" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="LogOffSecretaryActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="model.Doctor" target="model.PersonSuperClass"/>
+    <HasRelation name="instance" source="model.Singleton" target="model.Singleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="PatientList" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
+    <IsRelation name="is" source="model.Secretary" target="model.PersonSuperClass"/>
+    <HasRelation name="Admin1" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient1" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient2" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient3" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Patient" target="model.PersonSuperClass"/>
+    <HasRelation name="Patients" source="Views.HospitalGui" target="model.PatientList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="PatientList"/>
+    <HasRelation name="medicine" source="model.Prescriptions" target="model.Medicines" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Singleton" target="model.Singleton" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor3" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="AdminList" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Administrator&gt;"/>
+    <HasRelation name="DoctorList" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
+    <HasRelation name="Doctor2" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Admins" source="Views.HospitalGui" target="model.AdminList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="AdminList"/>
+    <UseRelation source="model.Prescriptions" target="model.Medicines" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor1" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Secretarys" source="Views.HospitalGui" target="model.SecretaryList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="SecretaryList"/>
+    <HasRelation name="Secretary1" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctors" source="Views.HospitalGui" target="model.DoctorList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DoctorList"/>
+    <HasRelation name="SecretaryList" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Secretary&gt;"/>
+    <IsRelation name="is" source="model.Administrator" target="model.PersonSuperClass"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
