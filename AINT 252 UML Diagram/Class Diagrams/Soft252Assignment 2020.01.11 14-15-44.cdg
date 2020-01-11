@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Soft252Assignment">
   <ClassDiagramComponents>
-    <Class name="AccountRequest" package="model" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="AccountRequest" package="model" visibility="public" xPosition="40.0" yPosition="20.0">
       <Fields>
         <Field name="PotentialPatientName" type="String" visibility="public"/>
         <Field name="PotentialPatientAddess" type="String" visibility="public"/>
@@ -24,12 +24,12 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Accounts" package="model" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Accounts" package="model" visibility="public" xPosition="40.0" yPosition="249.0">
       <Fields/>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Administrator" package="model" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Administrator" package="model" visibility="public" xPosition="496.0" yPosition="20.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -43,7 +43,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="AdminList" package="model" visibility="public" xPosition="920.0" yPosition="20.0">
+    <Class name="AdminList" package="model" visibility="public" xPosition="1179.0" yPosition="20.0">
       <Fields>
         <Field name="AdminLetter" type="String" visibility="private"/>
         <Field name="Admin1" type="Administrator" visibility="package"/>
@@ -54,7 +54,7 @@
         <Method name="adminList" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Appointments" package="model" visibility="public" xPosition="1220.0" yPosition="20.0">
+    <Class name="Appointments" package="model" visibility="public" xPosition="40.0" yPosition="1350.0">
       <Fields>
         <Field name="DoctorId" type="String" visibility="public"/>
         <Field name="PaitentId" type="String" visibility="public"/>
@@ -96,7 +96,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="DoctorList" package="model" visibility="public" xPosition="1820.0" yPosition="20.0">
+    <Class name="DoctorList" package="model" visibility="public" xPosition="1885.0" yPosition="192.0">
       <Fields>
         <Field name="DoctorLetter" type="String" visibility="private"/>
         <Field name="Doctor1" type="Doctor" visibility="public"/>
@@ -109,7 +109,7 @@
         <Method name="doctorlist" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Feedback" package="model" visibility="public" xPosition="2120.0" yPosition="20.0">
+    <Class name="Feedback" package="model" visibility="public" xPosition="753.0" yPosition="1369.0">
       <Fields>
         <Field name="DoctorId" type="int" visibility="public"/>
         <Field name="Rating" type="int" visibility="public"/>
@@ -137,7 +137,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Medicines" package="model" visibility="public" xPosition="20.0" yPosition="420.0">
+    <Class name="Medicines" package="model" visibility="public" xPosition="484.0" yPosition="1340.0">
       <Fields>
         <Field name="Medicine" type="String" visibility="public"/>
       </Fields>
@@ -153,14 +153,14 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="MedicineStock" package="model" visibility="public" xPosition="320.0" yPosition="420.0">
+    <Class name="MedicineStock" package="model" visibility="public" xPosition="40.0" yPosition="354.0">
       <Fields/>
       <Constructors/>
       <Methods>
         <Method name="MedicineList" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Patient" package="model" visibility="public" xPosition="620.0" yPosition="420.0">
+    <Class name="Patient" package="model" visibility="public" xPosition="1451.0" yPosition="750.0">
       <Fields>
         <Field name="Age" type="Integer" visibility="private"/>
         <Field name="Gender" type="String" visibility="private"/>
@@ -186,7 +186,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="PatientList" package="model" visibility="public" xPosition="920.0" yPosition="420.0">
+    <Class name="PatientList" package="model" visibility="public" xPosition="1881.0" yPosition="440.0">
       <Fields>
         <Field name="PatientLetter" type="String" visibility="private"/>
         <Field name="Patient1" type="Patient" visibility="package"/>
@@ -199,7 +199,7 @@
         <Method name="patientlist" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="PersonSuperClass" package="model" visibility="public" xPosition="1220.0" yPosition="420.0">
+    <Class name="PersonSuperClass" package="model" visibility="public" xPosition="266.0" yPosition="271.0">
       <Fields>
         <Field name="Letter" type="String" visibility="private"/>
         <Field name="Name" type="String" visibility="private"/>
@@ -245,7 +245,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Prescriptions" package="model" visibility="public" xPosition="1520.0" yPosition="420.0">
+    <Class name="Prescriptions" package="model" visibility="public" xPosition="40.0" yPosition="884.0">
       <Fields>
         <Field name="DoctorId" type="String" visibility="public"/>
         <Field name="paitentId" type="String" visibility="public"/>
@@ -291,12 +291,12 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="ReadAndWriteData" package="model" visibility="public" xPosition="1820.0" yPosition="420.0">
+    <Class name="ReadAndWriteData" package="model" visibility="public" xPosition="67.0" yPosition="781.0">
       <Fields/>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="Secretary" package="model" visibility="public" xPosition="2120.0" yPosition="420.0">
+    <Class name="Secretary" package="model" visibility="public" xPosition="1310.0" yPosition="1146.0">
       <Fields/>
       <Constructors>
         <Constructor visibility="public">
@@ -310,7 +310,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="SecretaryList" package="model" visibility="public" xPosition="20.0" yPosition="820.0">
+    <Class name="SecretaryList" package="model" visibility="public" xPosition="838.0" yPosition="895.0">
       <Fields>
         <Field name="SecretaryLetter" type="String" visibility="private"/>
         <Field name="Secretary1" type="Secretary" visibility="package"/>
@@ -321,7 +321,7 @@
         <Method name="secretarylist" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Singleton" package="model" visibility="public" xPosition="320.0" yPosition="820.0">
+    <Class name="Singleton" package="model" visibility="public" xPosition="40.0" yPosition="595.0">
       <Fields>
         <Field name="instance" type="Singleton" visibility="public" isStatic="true"/>
       </Fields>
@@ -331,7 +331,7 @@
         <Method name="getInstance" returnType="Singleton" visibility="public" isStatic="true"/>
       </Methods>
     </Class>
-    <Class name="Soft252Assignment" package="soft252assignment" visibility="public" xPosition="620.0" yPosition="820.0">
+    <Class name="Soft252Assignment" package="soft252assignment" visibility="public" xPosition="40.0" yPosition="477.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -340,7 +340,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="HospitalGui" package="Views" visibility="public" xPosition="920.0" yPosition="820.0">
+    <Class name="HospitalGui" package="Views" visibility="public" xPosition="956.0" yPosition="205.0">
       <Fields>
         <Field name="Admins" type="AdminList" visibility="package"/>
         <Field name="Doctors" type="DoctorList" visibility="package"/>
@@ -358,8 +358,7 @@
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="UserComboBoxActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -378,7 +377,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="MainPageGuiAdmin" package="Views" visibility="public" xPosition="1220.0" yPosition="820.0">
+    <Class name="MainPageGuiAdmin" package="Views" visibility="public" xPosition="2127.0" yPosition="1014.0">
       <Fields>
         <Field name="Header" type="javax.swing.JLabel" visibility="private"/>
         <Field name="LogOffAdmin" type="javax.swing.JButton" visibility="private"/>
@@ -391,8 +390,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="LogOffAdminActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -401,7 +399,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="MainPageGuiDoctor" package="Views" visibility="public" xPosition="1520.0" yPosition="820.0">
+    <Class name="MainPageGuiDoctor" package="Views" visibility="public" xPosition="2127.0" yPosition="703.0">
       <Fields>
         <Field name="LogOffDoctor" type="javax.swing.JButton" visibility="private"/>
         <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
@@ -416,8 +414,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="LogOffDoctorActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -426,7 +423,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="MainPageGuiPatient" package="Views" visibility="public" xPosition="1820.0" yPosition="820.0">
+    <Class name="MainPageGuiPatient" package="Views" visibility="public" xPosition="2127.0" yPosition="354.0">
       <Fields>
         <Field name="LogOffPatient" type="javax.swing.JButton" visibility="private"/>
         <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
@@ -443,8 +440,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="LogOffPatientActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -453,7 +449,7 @@ void" visibility="private"/>
         </Method>
       </Methods>
     </Class>
-    <Class name="MainPageGuiSecretary" package="Views" visibility="public" xPosition="2120.0" yPosition="820.0">
+    <Class name="MainPageGuiSecretary" package="Views" visibility="public" xPosition="2127.0" yPosition="20.0">
       <Fields>
         <Field name="LogOffSecretary" type="javax.swing.JButton" visibility="private"/>
         <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
@@ -469,8 +465,7 @@ void" visibility="private"/>
         <Constructor visibility="public"/>
       </Constructors>
       <Methods>
-        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
-void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
         <Method name="LogOffSecretaryActionPerformed" returnType="void" visibility="private">
           <Argument type="java.awt.event.ActionEvent" name="evt"/>
         </Method>
@@ -481,29 +476,29 @@ void" visibility="private"/>
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="Patient3" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patients" source="Views.HospitalGui" target="model.PatientList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="PatientList"/>
-    <HasRelation name="PatientList" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
-    <IsRelation name="is" source="model.Patient" target="model.PersonSuperClass"/>
-    <HasRelation name="Patient2" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="model.Singleton" target="model.Singleton" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patient1" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Admin1" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Doctor1" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="model.Doctor" target="model.PersonSuperClass"/>
-    <HasRelation name="Doctor2" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Doctor3" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="medicine" source="model.Prescriptions" target="model.Medicines" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Secretarys" source="Views.HospitalGui" target="model.SecretaryList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="SecretaryList"/>
-    <IsRelation name="is" source="model.Administrator" target="model.PersonSuperClass"/>
-    <UseRelation source="model.Prescriptions" target="model.Medicines" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="instance" source="model.Singleton" target="model.Singleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient3" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient1" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient2" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="AdminList" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Administrator&gt;"/>
     <HasRelation name="Secretary1" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Doctor" target="model.PersonSuperClass"/>
+    <HasRelation name="Doctor3" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor2" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor1" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patients" source="Views.HospitalGui" target="model.PatientList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="PatientList"/>
+    <IsRelation name="is" source="model.Administrator" target="model.PersonSuperClass"/>
     <HasRelation name="Admins" source="Views.HospitalGui" target="model.AdminList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="AdminList"/>
-    <HasRelation name="DoctorList" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
-    <HasRelation name="Doctors" source="Views.HospitalGui" target="model.DoctorList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DoctorList"/>
     <IsRelation name="is" source="model.Secretary" target="model.PersonSuperClass"/>
+    <UseRelation source="model.Singleton" target="model.Singleton" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="DoctorList" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
     <HasRelation name="SecretaryList" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Secretary&gt;"/>
+    <HasRelation name="PatientList" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
+    <HasRelation name="Admin1" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="medicine" source="model.Prescriptions" target="model.Medicines" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctors" source="Views.HospitalGui" target="model.DoctorList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DoctorList"/>
+    <IsRelation name="is" source="model.Patient" target="model.PersonSuperClass"/>
+    <HasRelation name="Secretarys" source="Views.HospitalGui" target="model.SecretaryList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="SecretaryList"/>
+    <UseRelation source="model.Prescriptions" target="model.Medicines" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
