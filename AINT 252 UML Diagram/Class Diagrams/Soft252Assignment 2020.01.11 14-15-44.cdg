@@ -199,7 +199,7 @@
         <Method name="patientlist" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="PersonSuperClass" package="model" visibility="public" xPosition="266.0" yPosition="271.0">
+    <Class name="PersonSuperClass" package="model" visibility="public" xPosition="267.0" yPosition="270.0">
       <Fields>
         <Field name="Letter" type="String" visibility="private"/>
         <Field name="Name" type="String" visibility="private"/>
@@ -476,29 +476,29 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="instance" source="model.Singleton" target="model.Singleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patient3" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patient1" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patient2" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="AdminList" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Administrator&gt;"/>
-    <HasRelation name="Secretary1" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="model.Doctor" target="model.PersonSuperClass"/>
-    <HasRelation name="Doctor3" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Doctor2" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Doctor1" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Patients" source="Views.HospitalGui" target="model.PatientList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="PatientList"/>
-    <IsRelation name="is" source="model.Administrator" target="model.PersonSuperClass"/>
     <HasRelation name="Admins" source="Views.HospitalGui" target="model.AdminList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="AdminList"/>
-    <IsRelation name="is" source="model.Secretary" target="model.PersonSuperClass"/>
-    <UseRelation source="model.Singleton" target="model.Singleton" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="DoctorList" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
-    <HasRelation name="SecretaryList" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Secretary&gt;"/>
-    <HasRelation name="PatientList" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
-    <HasRelation name="Admin1" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="AdminList" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Administrator&gt;"/>
     <HasRelation name="medicine" source="model.Prescriptions" target="model.Medicines" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="Doctors" source="Views.HospitalGui" target="model.DoctorList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DoctorList"/>
+    <HasRelation name="Patients" source="Views.HospitalGui" target="model.PatientList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="PatientList"/>
+    <HasRelation name="Doctor2" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Doctor3" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Doctor" target="model.PersonSuperClass"/>
     <IsRelation name="is" source="model.Patient" target="model.PersonSuperClass"/>
     <HasRelation name="Secretarys" source="Views.HospitalGui" target="model.SecretaryList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="SecretaryList"/>
+    <HasRelation name="Doctor1" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Secretary1" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="instance" source="model.Singleton" target="model.Singleton" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="DoctorList" source="model.DoctorList" target="model.Doctor" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Doctor&gt;"/>
+    <HasRelation name="Patient3" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="model.Singleton" target="model.Singleton" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="model.Prescriptions" target="model.Medicines" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Administrator" target="model.PersonSuperClass"/>
+    <HasRelation name="Patient2" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Patient1" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="SecretaryList" source="model.SecretaryList" target="model.Secretary" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Secretary&gt;"/>
+    <HasRelation name="PatientList" source="model.PatientList" target="model.Patient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Patient&gt;"/>
+    <HasRelation name="Doctors" source="Views.HospitalGui" target="model.DoctorList" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="DoctorList"/>
+    <HasRelation name="Admin1" source="model.AdminList" target="model.Administrator" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="model.Secretary" target="model.PersonSuperClass"/>
   </ClassDiagramRelations>
 </ClassDiagram>
