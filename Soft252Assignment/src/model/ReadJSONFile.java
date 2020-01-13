@@ -25,9 +25,9 @@ public class ReadJSONFile {
         try
         {
             Object obj = parser.parse(new FileReader("Doctors.json"));
-            JSONObject jsonObject = (JSONObject) obj;
-           // String Forname = (String) JsonObject.get("Forname");
-           // System.out.println("Location is: " + Forname);
+            JSONObject JsonObject = (JSONObject) obj;
+            String Forname = (String) JsonObject.get("Forname");
+            System.out.println("Location is: " + Forname);
         }
         catch(FileNotFoundException e) {e.printStackTrace();}
         catch(IOException e) {e.printStackTrace();}
