@@ -43,6 +43,9 @@ public class DoctorListTest {
 
     @Test
     public void testDoctorlist() {
+        Doctor Doctor1 = new Doctor ("D", "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2, "Bro" );
+        DoctorList Test = new DoctorList();
+        assertEquals(Doctor1.getUserId(), 2);
     }
     
 }
