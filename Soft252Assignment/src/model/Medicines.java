@@ -11,10 +11,20 @@ package model;
  */
 public class Medicines {
     public String Medicine;
-
-    public Medicines(String Medicine) {
+    public int StockNo;
+public Medicines(String Medicine,int StockNo) {
         this.Medicine = Medicine;
+        this.StockNo = StockNo;
     }
+    
+    public int getStockNo() {
+        return StockNo;
+    }
+
+    public void setStockNo(int StockNo) {
+        this.StockNo = StockNo;
+    }
+    
 
     public String getMedicine() {
         return Medicine;

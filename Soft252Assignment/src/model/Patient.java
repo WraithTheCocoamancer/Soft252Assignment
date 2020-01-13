@@ -10,21 +10,21 @@ package model;
  * @author mhill9
  */
 public class Patient extends PersonSuperClass{
-private Integer Age;
+private int Age;
 private String Gender;
 
-    public Patient(String Letter,String Name, String Surname, String Address, int UserID, String PreferredPassword) {
+    public Patient(String Letter,String Name, String Surname, String Address, int UserID, String PreferredPassword, int Age, String Gender) {
         super(Letter, Name, Surname, Address, UserID, PreferredPassword);
     }
 
    
-    public Integer getAge() {
+    public int getAge() {
         return Age;
     }
     public String getGender() {
         return Gender;
     }
-    public void setAge(Integer Age) {
+    public void setAge(int Age) {
         this.Age = Age;
     }
 
