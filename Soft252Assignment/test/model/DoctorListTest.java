@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Views;
+package model;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -16,9 +16,9 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author mhill9
  */
-public class HospitalGuiTest {
+public class DoctorListTest {
     
-    public HospitalGuiTest() {
+    public DoctorListTest() {
     }
     
     @BeforeAll
@@ -37,18 +37,12 @@ public class HospitalGuiTest {
     public void tearDown() {
     }
 
-    /**
-     * Test of main method, of class HospitalGui.
-     */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        HospitalGui.main(args);
+    public void testMessages() {
+    }
 
-    
-       // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    @Test
+    public void testDoctorlist() {
     }
     
 }

@@ -13,8 +13,13 @@ import java.util.ArrayList;
  */
 
 public class DoctorList {
+    public ArrayList<String> DoctorMessages = new ArrayList<>();
+    public void Messages()
+    {
+        
+    }
     private String DoctorLetter = "D";
-    public Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2, "Bro");
+    public Doctor Doctor1 = new Doctor (DoctorLetter, "Chad", "Doktor", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 2, "Bro" );
     public Doctor Doctor2 = new Doctor (DoctorLetter, "John", "Manhattan", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 3, "WhoWatches");
     public Doctor Doctor3 = new Doctor (DoctorLetter, "Steve", "Irwin", "The Cauldron Clinic, Bet Lane, PortSide,Brockton bay, BR3 6WB", 4, "Crikey!");
     public ArrayList<Doctor> DoctorList = new ArrayList<>();
@@ -24,4 +29,5 @@ public class DoctorList {
         DoctorList.add(Doctor2);
         DoctorList.add(Doctor3);
     }
+    
 }
